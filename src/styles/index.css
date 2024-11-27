@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #141E30, #243B55);
+  color: #ffffff;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+.sidebar {
+  width: 260px;
+  background: #1F1F2E;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-title {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.nav-menu a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #cfcfcf;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: block;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  background: linear-gradient(135deg, #FF7EB3, #FF758C);
+  color: #ffffff;
+  font-weight: 500;
+}
+
+
+.content {
+  flex-grow: 1;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #FF7EB3, #FF758C);
+  border: none;
+  border-radius: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #FF758C, #FF7EB3);
+}
+
+button.delete-btn {
+  background: linear-gradient(135deg, #FF5E5E, #D13737);
+}
+
+button.delete-btn:hover {
+  background: linear-gradient(135deg, #D13737, #FF5E5E);
+}
+
+
+.modal {
+  background: rgba(20, 20, 30, 0.95);
+  padding: 20px;
+  border-radius: 12px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.modal label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.modal input,
+.modal select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #1F1F2E;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.modal input:focus,
+.modal select:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 118, 136, 0.8);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  color: #fff;
+}
+
+table thead {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+table tbody tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .nav-menu a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .modal {
+    width: 95%;
+  }
+}
