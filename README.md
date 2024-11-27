@@ -67,7 +67,7 @@ Follow these steps to run the project locally or deploy it.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/MercySpectures/Role-Based-Access-Control.git
+   git clone https://github.com/hariz-coder/RABC-UI.git
    ```
 2. Navigate to the project directory:
    ```bash
